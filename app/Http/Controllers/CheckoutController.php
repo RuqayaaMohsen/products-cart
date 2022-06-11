@@ -107,6 +107,8 @@ class CheckoutController extends Controller
         unset($transaction->discounted_value);
         $transaction->save();
 
-        return response()->json(["Outputs " => $transaction], 200);
+        $transaction = Transaction::with('transactionItems')->find($transaction->id);
+
+        return response()->json(["outputs" => $transaction], 200);
     }
 }
