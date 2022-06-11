@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('calculate/cart', [CheckoutController::class, 'validateCartInputs']);
+Route::post('calculate/cart', [CheckoutController::class, 'validateCartInputs']);
 
