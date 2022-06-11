@@ -1,6 +1,7 @@
 # products-cart
 
 ## To install the project run the following commands:
+- **composer install**
 - **create a database with name shopping_app**
 - **php artisan migrate**
 - **php artisan db:seed AddProductsDataSeeder**
